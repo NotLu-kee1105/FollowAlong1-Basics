@@ -8,6 +8,25 @@ package part05;
 //
 // There is no main method here yet. Typing it is part of the stretch.
 
+import java.util.Random;
+
 public class Stretch {
+    public static void main(String[] args) {
+        /* MY GUESS:
+        print 7,2.5,8,7,3,2,3,-3
+         */
+        System.out.println(Math.max(7, -3));
+        System.out.println(Math.min(2.5, 9));
+        System.out.println(Math.abs(-8));
+        System.out.println(Math.sqrt(49));
+        System.out.println(Math.round(2.5));
+        System.out.println(Math.round(2.4));
+        System.out.println(Math.ceil(2.1));
+        System.out.println(Math.floor(-2.1));
+
+        Random random = new Random();
+        int roll = random.nextInt(6)+1;
+        System.out.println("You rolled a "+roll);
+    }
 
 }
