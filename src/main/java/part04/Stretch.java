@@ -8,6 +8,15 @@ package part04;
 //
 // There is no main method here yet. Typing it is part of the stretch.
 
-public class Stretch {
+import java.util.Scanner;
 
+public class Stretch {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your name?");
+
+        String name = scanner.nextLine();
+
+        System.out.println("Hi,"+name);
+    }
 }
