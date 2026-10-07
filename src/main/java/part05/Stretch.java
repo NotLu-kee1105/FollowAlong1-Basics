@@ -9,6 +9,7 @@ package part05;
 // There is no main method here yet. Typing it is part of the stretch.
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Stretch {
     public static void main(String[] args) {
@@ -27,6 +28,29 @@ public class Stretch {
         Random random = new Random();
         int roll = random.nextInt(6)+1;
         System.out.println("You rolled a "+roll);
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the radius of the circle:");
+
+        double radius = scanner.nextDouble();
+
+        double area = Math.PI*radius*radius;
+
+        System.out.println("Area: "+area);
+
+        long roundedArea = Math.round(area);
+
+        System.out.println("Rounded area: "+roundedArea);
+
+        int x1 = 1;
+        int y1 = 2;
+
+        int x2 = 4;
+        int y2 = 6;
+
+        double distance = Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+        System.out.println("Distance: "+distance);
     }
 
 }
