@@ -20,6 +20,7 @@ public class Main {
         System.out.println("\t\"I love pizza\"\n");
         //prints Its really good into the terminal
         System.out.println("Its really good \\");
+        System.out.println("Test");
         //This is a comment
         /*
         This
